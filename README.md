@@ -18,5 +18,6 @@
 - Answer: Returning `404` clearly indicates that the requested resource does not exist. This helps clients properly handle errors instead of assuming the request was successful.
 
 **4. Testing:**
+(Paste a screenshot of a successful GET request here)
 ![GET /dishes screenshot](image.png)
 
