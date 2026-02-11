@@ -1,5 +1,6 @@
 # RESTful API Activity - Myren Joy N. Lawig
 
+
 ## Best Practices Implementation
 
 **1. Environment Variables:**
@@ -21,3 +22,13 @@
 (Paste a screenshot of a successful GET request here)
 ![GET /dishes screenshot](image.png)
 
+
+## Data Modeling Decisions
+
+### Why did we choose to Embed the Review / Tag / Log?
+
+We decided to embed the Review, Tag, and Log because they are minor and dependent pieces of data that are closely tied to the main document. Since they are typically accessed together with the parent record and do not need to exist independently, embedding them keeps the data structure simple, efficient, and optimized for faster reads.
+
+### Why did we choose to Reference the Chef / User / Guest?
+
+We chose to reference the Chef, User, and Guest entities because they exist independently and can be associated with multiple records in the system. Referencing helps prevent data duplication, maintains normalization, and ensures consistency when their information is updated.
